@@ -1,10 +1,6 @@
-test1 = BankAccount("Alexa", 300, 100)
-test1.deposit(600)
-test1.withdraw(80)
-test1.print_customer_information()
-test2 = BankAccount("Bob", 5000, 100)
-test2.deposit(800)
-test2.withdraw(5701)
-test2.print_customer_information()
-test3 = BankAccount("David", 170, 100)
-test3.withdraw(500)
+from BankAccount import BankAccount
+from CheckingAccount import CheckingAccount
+
+checking1 = CheckingAccount("Alexa", 1000, 100, "1000200030", "071000013")
+checking2 = CheckingAccount("Bob", 2500, 200, "1000200031", "071000014")
+checking3 = CheckingAccount("Chris", 500, 50, "1000200032", "071000015")
