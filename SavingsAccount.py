@@ -7,7 +7,7 @@ class SavingsAccount(BankAccount):
         self.interest_rate = interest_rate
 
     def get_interest_rate(self):
-        return print(f"Interest rate: {self.interest_rate * 100}%")
+        return self.interest_rate * 100
 
     def add_interest (self):
         interest = self.interest_rate * self.current_balance
