@@ -2,10 +2,12 @@ class BankAccount:
 
     bank_name = "The Bank" # class attribute
 
-    def __init__(self, customer_name, current_balance, minimum_balance):
+    def __init__(self, customer_name, current_balance, minimum_balance, account_numer, routing_number):
         self.customer_name = customer_name
         self.current_balance = current_balance
         self.minimum_balance = minimum_balance
+        self._account_numer = account_numer # protected
+        self.__routing_number = routing_number # private
 
     def deposit(self, amount):
         if amount > 0:
